@@ -9,3 +9,9 @@ Using Flex box, Position, Pseudo Selectors
 
 ![The Best Colors](/image/best-colors.PNG)
 
+### 2. Animate All The Things! - [html](https://github.com/SoyeonHH/KakaoTalk-Clone/blob/main/animate.html), [css](https://github.com/SoyeonHH/KakaoTalk-Clone/blob/main/animate.css)
+
+Using Transitions, Transformations, Animations
+
+![Animate](/image/animate.PNG)
+![Animate2](/image/animate2.PNG)
