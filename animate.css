@@ -1,0 +1,72 @@
+:root {
+  --main-pixel: 10px;
+}
+body {
+  background-color: #6bbcbe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px;
+  width: 100px;
+}
+.dots {
+  width: 120px;
+  animation: turnaround 2s ease-in-out infinite;
+}
+.dot {
+  background-color: white;
+  border-radius: 50%;
+  width: var(--main-pixel);
+  height: var(--main-pixel);
+  margin: 10px;
+}
+.bar {
+  background-color: white;
+  width: var(--main-pixel);
+  height: 60px;
+  animation: pumping 1s ease-in-out infinite;
+}
+.bar:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.bar:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.bar:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.bar:nth-child(5) {
+  animation-delay: 0.4s;
+}
+@keyframes turnaround {
+  0% {
+    transform: rotateZ(0);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes pumping {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scaleY(2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
