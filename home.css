@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+div {
+  background-color: teal;
+  width: 200px;
+  height: 200px;
+}
+span {
+  font-size: 36px;
+}
+@media screen and (max-width: 600px) {
+  div {
+    background-color: tomato;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1200px) and (orientation: landscape) {
+  div {
+    background-color: wheat;
+  }
+}
+@media screen and (min-width: 1201px) {
+  div {
+    background-color: tomato;
+  }
+}
+@media screen and (orientation: landscape) {
+  span {
+    display: none;
+  }
+}
